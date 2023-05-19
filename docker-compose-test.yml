@@ -1,0 +1,10 @@
+version: '3'
+services:
+  demo:
+    image: 'test_docker:0.0.1'
+    network_mode: host
+    privileged: true
+    volumes:
+      - 'C:/DockerTest/logs/Testdockerservice:/logs'
+    ports:
+      - '8000:8000'
